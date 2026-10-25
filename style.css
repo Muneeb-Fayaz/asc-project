@@ -1,0 +1,127 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ---------- header ---------- */
+header {
+    background: #222;
+    color: #fff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #bbb;
+}
+
+/* ---------- home / hero ---------- */
+.home {
+    text-align: center;
+    padding: 110px 20px 100px;
+    background: #fff;
+}
+
+.home h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.home h3 {
+    color: #666;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.home p {
+    margin-bottom: 28px;
+}
+
+.btn {
+    background: #222;
+    color: #fff;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+/* other sections */
+section:not(.home) {
+    padding: 50px 10%;
+}
+
+section h2 {
+    margin-bottom: 14px;
+}
+
+#about p {
+    max-width: 680px;
+}
+
+/* skills boxes */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills p {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 18px;
+}
+
+#contact {
+    background: #fff;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .home {
+        padding: 70px 20px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+}
